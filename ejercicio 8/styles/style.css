@@ -1,0 +1,76 @@
+body {
+	text-align: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mainBody tbody tr td, .mainBody tbody tr th {
+	border: 2px solid #979999;
+}
+
+.mainBody tbody tr:nth-child(2n+4) {
+	background-color: #d6f6ff;
+}
+
+.mainBody tbody tr:last-child {
+	background-color: #21cdff;
+}
+
+.mainBody tbody tr:first-child, .mainBody tbody tr:nth-child(2) {
+	font-weight: bold;
+}
+
+.mainBody tbody tr:first-child td:first-child {
+	background-color: #151ecf;
+	color: #FFFFFF;
+}
+
+.temaHTML {
+	background-color: #FF6e38;
+	background-image: url("logos/html5.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.temaPHP {
+	background-color: #4751ff;
+	background-image: url("logos/php.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.temaJS {
+	background-color: #fffb00;
+	background-image: url("logos/js.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.temaCSS {
+	background-color: #4fd6ff;
+	background-image: url("logos/css3.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.temaSVG {
+	background-color: #800000;
+	background-image: url("logos/svg.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.temaTPF {
+	background-color: #151ecf;
+	color: #FFFFFF;
+	vertical-align: bottom;
+}
