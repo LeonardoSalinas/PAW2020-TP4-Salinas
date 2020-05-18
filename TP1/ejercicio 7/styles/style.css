@@ -1,0 +1,302 @@
+* {
+	font-family: candara;
+}
+
+body {
+	position: relative;
+}
+
+header {
+	background-color: #292726;
+	color: #FFFFFF;
+	width: 60vw;
+	float: left;
+}
+
+header p {
+	text-align: center;
+	border: 0;
+	margin: 0;
+}
+
+header p:first-child {
+	font-size: 3em;
+}
+
+header p:last-child {
+	font-size: 1.3em;
+}
+
+.sideBar {
+	background-color: #ab958a;
+	width: 30vw; 
+	float: right;
+	font-size: 20px;
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	right: 0;
+}
+
+.sideBar h2 {
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.sideBar ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.avatar img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 1em;
+}
+
+.personalData, .langSkills, .compSkills {
+	margin-bottom: 3em;
+}
+
+.personalData ul {
+	padding: 0;
+	margin: 0 0 0 1em;
+}
+
+.personalData h2:before {
+	font-family: FontAwesome;
+	content: "\f05a";
+	display: block;
+	font-size: 2em;
+}
+
+.personalData ul li:before {
+	font-family: FontAwesome;
+	margin-right: 1vw;
+}
+
+.personalData ul li:first-child:before {
+	content: "\f073";
+}
+
+.personalData ul li:nth-child(2):before {
+	content: "\f041";
+}
+
+.personalData ul li:nth-child(3):before {
+	content: "\f095";
+}
+
+.personalData ul li:nth-child(4):before {
+	content: "\f0e0";
+}
+
+.personalData ul li:nth-child(5):before {
+	content: "\f07b";
+}
+
+.personalData ul li:nth-child(2),
+.personalData ul li:nth-child(3),
+.personalData ul li:nth-child(4) {
+	font-weight: bold;
+}
+
+.langSkills h2:before {
+	font-family: FontAwesome;
+	content: "\f086";
+	display: block;
+	font-size: 2em;
+}
+
+.langSkills dl {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+  	margin: 0;
+}
+
+.langSkills dl dt {
+	width: 40%;
+	float: left;
+	padding-left: 1em;
+	margin: 0;
+}
+
+.langSkills dl dd {
+	width: 40%;
+	float: right;
+	text-align: right;
+	padding-right: 1em;
+  	margin: 0;
+}
+
+.langSkills dl dt:nth-child(3),
+.langSkills dl dd:nth-child(4) {
+	font-weight: bold;
+}
+
+.compSkills {
+	
+}
+
+.compSkills h2:before {
+	font-family: FontAwesome;
+	content: "\f109";
+	display: block;
+	font-size: 2em;
+}
+
+.compSkills ul {
+	padding: 0;
+	margin: 0;
+}
+
+.compSkills ul li {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+  	margin: 0;
+}
+
+.compSkills ul li p:first-child {
+	font-weight: bold;
+	width: 40%;
+	float: left;
+	clear: right;
+	padding-left: 1em;
+	margin: 0;
+}
+
+.compSkills ul li p:last-child {
+  	text-align: right;
+  	visibility: hidden;
+  	margin: 0;
+}
+
+/* 
+No funciona el unicode \f1ce para los círculos vacíos.
+Uso \f05c en su lugar.
+ */
+
+.compSkills ul li p:last-child:before {
+ 	font-family: FontAwesome;
+	display: inline-block;
+	visibility: visible;	
+}
+
+.skillLvl1 p:last-child:before {
+	content: "\f111  \f05c  \f05c  \f05c  \f05c";	
+}
+
+.skillLvl2 p:last-child:before {
+	content: "\f111  \f111  \f05c  \f05c  \f05c";
+}
+
+.skillLvl3 p:last-child:before {
+	content: "\f111  \f111  \f111  \f05c  \f05c";
+}
+
+.skillLvl4 p:last-child:before {
+	content: "\f111  \f111  \f111  \f111  \f05c";
+}
+
+.skillLvl5 p:last-child:before {
+	content: "\f111  \f111  \f111  \f111  \f111";
+}
+
+.workExp, .education, .didacticExp {
+	width: 60vw;
+}
+
+.workExp:before, .education:before, .didacticExp:before {
+	font-family: FontAwesome;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.workExp h2, .education h2, .didacticExp h2 {
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-size: 2em;
+}
+
+.workExp:before {
+	content: "\f040";
+}
+
+.workExp img {
+	width: 10vw;
+	height: auto;
+	padding: 0 1em 0 1em;
+}
+
+.workExp dl, .education dl {
+	display: flex;
+}
+
+.workExp dl dt p, .education dl dt p {
+	font-weight: bold;
+}
+
+.education:before {
+	content: "\f02d";
+}
+
+.education dl dt p {
+	margin-right: 1em;
+}
+
+.education dl dl p {
+	margin-left: 1em;
+}
+
+.didacticExp:before {
+	content: "\f0ea";
+}
+
+.didacticExp {
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+	.personalData ul li:before {
+		display: none;
+	}
+
+	.personalData ul li {
+		font-size: 0.8em;
+	}
+
+	.langSkills dl dt, .langSkills dl dd {
+		width: 30%;
+		font-size: 0.8em;
+	}
+
+	.compSkills ul li p:last-child:before {
+		display: none;
+	}
+
+	.compSkills ul li p:last-child {
+		visibility: visible;
+		padding-right: 1em;
+	}
+
+	.workExp img {
+		display: none;
+	}
+
+	.workExp dl dt p {
+		padding-right: 1em;
+	}
+
+	.workExp dl dl p {
+		padding-left: 1em;
+	}
+
+}

@@ -9,7 +9,8 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
 <head>
     <title>Curriculum Vitae</title>
     <meta charset="utf-8" />
-
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 
@@ -19,77 +20,75 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
         <p>Gastón Garrós</p>
         <p>Lic. en Sistemas de Información</p>
     </header>
+
     <main>
-        <figure>
-            <!--figura -->
-            <img src="#" alt=" ">
+		<section class="sideBar">
 
+			<figure class="avatar">
+            	<!--figura -->
+            	<img src="styles/images/avatar.jpg" alt="Foto documento">
+        	</figure>
 
-        </figure>
-        <section>
-            <!--Information-->
-            <h2>Información </h2>
-            <ul>
-                <li>06.09.1991</li>
-                <li>San Andres de Giles</li>
-                <li>+5492325593915</li>
-                <li> <a href="bytecell.sys@gmail.com">Bytecell.sys@gmail.com</a> </li>
-                <li> <a href="http://bytecell.com.ar">http://bytecell.com.ar</a></li>
-            </ul>
-            
+	        <section class="personalData">
+	            <!--Information--> 
+	            <h2>Información </h2>
+	            <ul>
+	                <li>06.09.1991</li>
+	                <li>San Andres de Giles</li>
+	                <li>+5492325593915</li>
+	                <li>Bytecell.sys@gmail.com</a> </li>
+	                <li>http://bytecell.com.ar</a></li>
+	            </ul>      
+	        </section>
 
-           
+	        <section class="langSkills">
+	            <!--Lenguages Skills -->
+	            <h2> Habilidades Lenguajes</h2>
+	            <dl>
+	                <dt>Español</dt>
+	            	<dd>Nativo</dd>
+	                <dt>Ingles</dt>
+	                <dd>B2</dd>
+	            </dl>
+	        </section>
 
-        </section>
-        <section>
-            <!--Lenguages Skills -->
-
-            <h2> Habilidades Lenguajes</h2>
-            <ul>
-                <li>Español......nativo</li>
-                <li>Ingles......B2</li>
-            </ul>
-        </section>
-        <section>
-            <!--Computer Skills-->
-            <h2>Habilidades informaticas</h2>
-            <ul>
-                <li>
-                    <p>Java</p>
-                    <p>4</p>
-                </li>
-                <li>
-                    <p>Delphi</p>
-                    <p>4</p>
-                </li>
-                <li>
-                    <p>React native</p>
-                    <p>1</p>
-                </li>
-                <li>
-                    <p>Python</p>
-                    <p>1</p>
-                </li>
-                <li>
-                    <p>Postgresql</p>
-                    <p>3</p>
-                </li>
-                <li>
-                    <p>Mysql</p>
-                    <p>2</p>
-                </li>
-                <li>
-                    <p>Firebird</p>
-                    <p>4</p>
-                </li>
-            </ul>
-            
-        </section>
-    
-
+	        <section class="compSkills">
+	            <!--Computer Skills-->
+	            <h2>Habilidades informaticas</h2>
+	            <ul>
+	                <li class="skillLvl4">
+	                    <p>Java</p>
+	                    <p>4</p>
+	                </li>
+	                <li class="skillLvl5">
+	                    <p>Delphi</p>
+	                    <p>5</p>
+	                </li>
+	                <li class="skillLvl1">
+	                    <p>React</p>
+	                    <p>1</p>
+	                </li>
+	                <li class="skillLvl1">
+	                    <p>Python</p>
+	                    <p>1</p>
+	                </li>
+	                <li class="skillLvl3">
+	                    <p>Postgresql</p>
+	                    <p>3</p>
+	                </li>
+	                <li class="skillLvl2">
+	                    <p>Mysql</p>
+	                    <p>2</p>
+	                </li>
+	                <li class="skillLvl4">
+	                    <p>Firebird</p>
+	                    <p>4</p>
+	                </li>
+	            </ul>   
+	        </section>
+	    </section>
    
-       
-        <section>
+        <section class="workExp">
             <!--Work Experiencie-->
             
             <h2>Experiencia de Trabajo</h2>
@@ -99,7 +98,7 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
                     <p>actualidad</p>
                 </dt>
                 <dl>
-                    <img src="#" alt=" ">
+                    <img src="styles/images/bytecell.png" alt="Logo de Bytecell">
                     <p>Reparacion de smartphones, tablet y mantenimiento de sistemas informáticos. Bytecell</p>
                 
                 </dl>
@@ -111,17 +110,14 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
                     <p>actualidad</p>
                 </dt>
                 <dl>
-                    <img src="#" alt=" ">
+                    <img src="styles/images/vivianHotel.png" alt="Logo de Hotel Vivian Boutique">
                     <p>Instalación y configuración de cámaras de seguridad y mantenimiento informático general en
                         Vivian Hotel Boutique.</p>
                 </dl>
-            </dl>
-                
-
-        
-
+            </dl>      
         </section>
-        <section>
+
+        <section class="education">
             <!--Education-->
            
             <h2>Educación</h2>
@@ -148,7 +144,7 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
 
             <dl>
                 <dt>
-                    <p>agosto 2019</p>
+                    <p>Agosto 2019</p>
                 <p>Diciembre 2019</p>
                 </dt>
                 <dl>
@@ -159,8 +155,8 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
             
             <dl>
                 <dt>
-                    <p>enero 2020</p>
-                    <p>febrero 2020</p>
+                    <p>Enero 2020</p>
+                    <p>Febrero 2020</p>
                 </dt>
                 <dl>
                     <p>Curso microelectrónica y reballing especializado en Iphone</p>
@@ -169,11 +165,10 @@ Determine qué tags con qué atributos son necesarios en cada caso. -->
 
            
         </section>
-        <section>
+        <section class="didacticExp">
             <!--Didactic experencie and prize-->
-            
             <h2>Experiencia didácticas</h2>
-
+            <p>Ninguna</p>
         </section>
     </main>
 
